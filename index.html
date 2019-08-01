@@ -11,17 +11,88 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Website Tracking Script for local dev environment -->
+    <!--
+      <script type="text/javascript">
+        (function(j,u,k,e,b,o,x){j[b]=j[b]||function(){
+        (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
+        x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
+        })(window,document,'script','http://buzzdata.local:8080/WebsiteTracking.js','lbhq');
+        lbhq('create', 'LB-43EF9B5F-1');
+        lbhq('_env', 'development');
+      </script>
+    -->
+    <!-- Website Tracking Script for staging environment -->
     <script type="text/javascript">
       (function(j,u,k,e,b,o,x){j[b]=j[b]||function(){
       (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
       x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
-      })(window,document,'script','http://buzzdata.local:8080/WebsiteTracking.js','lbhq');
-      lbhq('create', 'LB-43EF9B5F-1');
-      lbhq('_env', 'development');
+      })(window,document,'script','https://app.cdn.lookbookhq.com/staging2/jukebox/current/WebsiteTracking.js','lbhq');
+      lbhq('create', 'LB-5B4D1EC2-1');
+      lbhq('_env', 'staging2');
     </script>
   </head>
   <body>
-    <h1>Welcome to my page!</h1>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Header -->
+        <header id="header">
+          <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+          <h1>Hi! My name is <strong>Harry</strong>, welcome to my site!</h1>
+          <ul class="icons">
+            <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/harrythedogwholived/" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+          </ul>
+        </header>
+
+      <!-- Main -->
+        <section id="main">
+
+          <!-- Thumbnails -->
+            <section class="thumbnails">
+              <div>
+                <a href="images/fulls/01.jpg">
+                  <img src="images/thumbs/01.jpg" alt="" />
+                  <h3>new coat, who dis?</h3>
+                </a>
+              </div>
+              <div>
+                <a href="images/fulls/03.jpg">
+                  <img src="images/thumbs/03.jpg" alt="" />
+                  <h3>#squad</h3>
+                </a>
+                <a href="images/fulls/04.jpg">
+                  <img src="images/thumbs/04.jpg" alt="" />
+                  <h3>beach boy</h3>
+                </a>
+              </div>
+              <div>
+                <a href="images/fulls/06.jpg">
+                  <img src="images/thumbs/06.jpg" alt="" />
+                  <h3>drive-in days</h3>
+                </a>
+              </div>
+            </section>
+
+        </section>
+
+      <!-- Footer -->
+        <footer id="footer">
+          <p>&copy; All rights reserved.</p>
+        </footer>
+
+    </div>
+
+		<!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>
 
