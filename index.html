@@ -25,6 +25,13 @@
 <link rel="stylesheet" href="assets/css/main.css" />
   <!-- Website Tracking Script for local dev environment -->
   <script type="text/javascript">
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Webpage',
+      eventAction: 'view',
+      eventLabel: 'PathFactory Event'
+    });
+
     (function(j,u,k,e,b,o,x){j[b]=j[b]||function(){
     (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
     x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
