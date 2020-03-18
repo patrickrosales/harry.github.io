@@ -10,11 +10,12 @@
 
   gtag('config', 'UA-145365799-1');
 
-  gtag('send', {
-    hitType: 'event',
-    eventCategory: 'Webpage',
-    eventAction: 'view',
-    eventLabel: 'PathFactory Event with gtag'
+  // Sends the event to the Google Analytics property with
+  // tracking ID GA_MEASUREMENT_ID set by the config command in
+  // the global tracking snippet.
+  gtag('event', 'view', {
+    event_category: 'Webpage',
+    event_label: 'PathFactory Event with gtag'
   });
 </script>
 
