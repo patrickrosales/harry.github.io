@@ -21,10 +21,10 @@
   // Sends the event to the Google Analytics property with
   // tracking ID GA_MEASUREMENT_ID set by the config command in
   // the global tracking snippet.
-  gtag('event', 'view', {
-    event_category: 'Webpage',
-    event_label: 'PathFactory Event with gtag v4',
-  });
+  // gtag('event', 'view', {
+  //   event_category: 'Webpage',
+  //   event_label: 'PathFactory Event with gtag v4',
+  // });
 
   // Using hit-level scoping ensures that each screen view is unique for a page view 
   // gtag('event', 'pathfactory_page_view', {
@@ -40,6 +40,7 @@
     'views': 55
   });
 
+  // Does this event get sent?
   gtag('event', 'custom_dimension_views', {
     'views': 'abc'
   });
