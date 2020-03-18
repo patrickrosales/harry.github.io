@@ -15,7 +15,7 @@
   // Once configured, the custom dimension or metric will be assigned a unique index that identifies and differentiates one custom dimension or metric from another. 
   // You then use the index in the analytics.js library to send data for a particular custom dimension or metric.
   gtag('config', 'UA-145365799-1', {
-    'custom_map': {'dimension1': 'Patrick Page View Dimension'}
+    'custom_map': {'dimension2': 'views'}
   });
 
   // Sends the event to the Google Analytics property with
@@ -23,7 +23,7 @@
   // the global tracking snippet.
   gtag('event', 'view', {
     event_category: 'Webpage',
-    event_label: 'PathFactory Event with gtag v3',
+    event_label: 'PathFactory Event with gtag v4',
   });
 
   // Using hit-level scoping ensures that each screen view is unique for a page view 
@@ -37,8 +37,8 @@
 
   // In Progress
   // Using hit-level scoping ensures that each screen view is unique for a page view 
-  gtag('event', 'pathfactory_page_view', {
-    'Patrick Page View Dimension': Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+  gtag('event', 'custom_dimension_views', {
+    'views': Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
   });
 </script>
 
