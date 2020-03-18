@@ -8,6 +8,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  // The Google Analytics ID is the GA_MEASUREMENT_ID field.
   gtag('config', 'UA-145365799-1');
 
   // Sends the event to the Google Analytics property with
@@ -15,7 +16,15 @@
   // the global tracking snippet.
   gtag('event', 'view', {
     event_category: 'Webpage',
-    event_label: 'PathFactory Event with gtag'
+    event_label: 'PathFactory Event with gtag v2',
+  });
+
+  // In Progress
+  gtag('event', 'view', {
+    // 'send_to': 'GA_MEASUREMENT_ID',  // Optional, Send the event to the Google Analytics property with tracking ID GA_MEASUREMENT_ID.
+    nonInteraction: true,   // Set this to not count the event towards the bounce rate. Bounce is defined as a session containing only one interaction hit.
+    event_category: 'Webpage',
+    event_label: 'PathFactory Event with gtag v2',
   });
 </script>
 
