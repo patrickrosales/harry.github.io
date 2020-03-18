@@ -36,9 +36,12 @@
   // });
 
   // In Progress
-  // Using hit-level scoping ensures that each screen view is unique for a page view 
   gtag('event', 'custom_dimension_views', {
-    'views': Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+    'views': 55
+  });
+
+  gtag('event', 'custom_dimension_views', {
+    'views': 'abc'
   });
 </script>
 
