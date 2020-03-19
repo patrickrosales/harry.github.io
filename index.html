@@ -18,6 +18,12 @@
     'custom_map': {'dimension2': 'views'}
   });
 
+  // Event to track a jukebox script.
+  gtag('event', 'custom_dimension_views', {
+    'views': 'has_jukebox_script',
+    event_label: 'Has Jukebox script',
+  });
+
   // Sends the event to the Google Analytics property with
   // tracking ID GA_MEASUREMENT_ID set by the config command in
   // the global tracking snippet.
@@ -34,18 +40,6 @@
   //   event_category: 'Webpage',
   //   event_label: 'Custom dimension event',
   // });
-
-  // In Progress
-  gtag('event', 'custom_dimension_views', {
-    'views': 'jukeboxpageviews',
-    event_label: 'PathFactory Custom Dimension Event with gtag v5',
-  });
-
-  // Can we trigger two events?
-  gtag('event', 'custom_dimension_views', {
-    'views': 'secondevent',
-    event_label: 'Testing a second dimension event',
-  });
 </script>
 
 <title>Harry the Dog Who Lived</title>
@@ -68,6 +62,12 @@
     })(window,document,'script','http://buzzdata.local:8080/jukebox.js','lbhq');
       lbhq('create', 'LB-43EF9B5F-1');
       lbhq('_env', 'development');
+
+      // Event to track if Jukebox was loaded successfully.
+      gtag('event', 'custom_dimension_views', {
+        'views': 'jukebox_loaded_successfully',
+        event_label: 'Jukebox script is loaded successfully',
+      });
   </script>
 </head>
 
