@@ -40,6 +40,12 @@
     'views': 'jukeboxpageviews',
     event_label: 'PathFactory Custom Dimension Event with gtag v5',
   });
+
+  // Can we trigger two events?
+  gtag('event', 'custom_dimension_views', {
+    'views': 'secondevent',
+    event_label: 'Testing a second dimension event',
+  });
 </script>
 
 <title>Harry the Dog Who Lived</title>
