@@ -68,6 +68,12 @@
         'views': 'jukebox_loaded_successfully',
         event_label: 'Jukebox script is loaded successfully',
       });
+
+      // Testing an exception.
+      gtag('event', 'exception', {
+        'description': 'this is an exception error message',
+        'fatal': false  // set to true if the exception is fatal
+      });
   </script>
 </head>
 
