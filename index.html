@@ -63,11 +63,12 @@
       lbhq('create', 'LB-43EF9B5F-1');
       lbhq('_env', 'development');
 
+      // TODO Add condition when Jukebox was loaded successfully.
       // Event to track if Jukebox was loaded successfully.
-      // gtag('event', 'custom_dimension_views', {
-      //   'views': 'jukebox_loaded_successfully',
-      //   event_label: 'Jukebox script is loaded successfully',
-      // });
+      gtag('event', 'custom_dimension_views', {
+        'views': 'jukebox_loaded_successfully',
+        event_label: 'Jukebox script is loaded successfully',
+      });
   </script>
 </head>
 
