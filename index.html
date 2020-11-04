@@ -98,6 +98,26 @@
       <!-- PathFactory Concierge -->
         <div id="in_page_promoter"></div>
 
+
+      <!-- Vimeo Test -->
+        <div id="myVideo"></div>
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+        <script src="{url}"></script>
+        <script>
+          var options = {
+            url: "https://vimeo.com/87090371",
+            width: 800
+          };
+
+          var videoPlayer = new Vimeo.Player('myVideo', options);
+
+          videoPlayer.on('play', function() {
+            console.log('Played the video');
+          });
+        </script>
+
       <!-- Footer -->
         <footer id="footer">
           <p>&copy; 2019 All rights reserved.</p>
