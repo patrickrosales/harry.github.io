@@ -45,20 +45,6 @@
     })(window,document,'script','http://buzzdata.local:8080/jukebox.js','lbhq');
       lbhq('create', 'LB-43EF9B5F-1');
       lbhq('_env', 'development');
-
-      // TODO Add condition when Jukebox was loaded successfully.
-      // Event to track if Jukebox was loaded successfully.
-      gtag('event', 'custom_dimension_views', {
-        'views': 'jukebox_loaded_successfully',
-        event_label: 'Jukebox script is loaded successfully',
-      });
-
-      // TODO Once page view generated, add check for valid page view.
-      // Event to track if page view was created.
-      gtag('event', 'custom_dimension_views', {
-        'views': 'pf_page_view_created',
-        event_label: 'PathFactory page view created',
-      });
   </script>
 </head>
 
