@@ -3,27 +3,6 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145365799-1"></script>
-<script type="text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  // The Google Analytics ID is the GA_MEASUREMENT_ID field.
-  // dimension1 is the 'dimension<Index>' where <Index> is an integer 1-20. It is auto-generated.
-  // 'Patrick Page View Dimension' is the dimension name. It is user defined.
-  // You must first configure a custom dimension or metric through the Google Analytics Management Interface. 
-  // Once configured, the custom dimension or metric will be assigned a unique index that identifies and differentiates one custom dimension or metric from another. 
-  // You then use the index in the analytics.js library to send data for a particular custom dimension or metric.
-  gtag('config', 'UA-145365799-1', {
-    'custom_map': {'dimension2': 'views'}
-  });
-
-  // Event to track a jukebox script.
-  gtag('event', 'custom_dimension_views', {
-    'views': 'has_jukebox_script',
-    event_label: 'Has Jukebox script',
-  });
-</script>
 
 <title>Harry the Dog Who Lived</title>
 <meta charset="utf-8" />
@@ -37,15 +16,6 @@
   type="text/css"
 />
 <link rel="stylesheet" href="assets/css/main.css" />
-  <!-- Website Tracking Script for Development environment -->
-  <script type="text/javascript">
-    (function(j,u,k,e,b,o,x){j["pfObject"]=b;j[b]=j[b]||function(){
-    (j[b].q=j[b].q||[]).push(arguments)},j[b].l=1*new Date();o=u.createElement(k),
-    x=u.getElementsByTagName(k)[0];o.async=1;o.src=e;x.parentNode.insertBefore(o,x)
-    })(window,document,'script','https://cdn.pathfactory-development.com/development2/jukebox-lite/current/jukebox.js',"pf");
-      pf('create', 'LB-44AAAB61-109');
-      pf('_env', 'development2');
-  </script>
 </head>
 
   <body>
@@ -95,28 +65,17 @@
 
         </section>
 
-      <!-- PathFactory Concierge -->
-        <div id="in_page_promoter"></div>
+        <hr>
 
-
-      <!-- Vimeo Test -->
-        <div id="myVideo"></div>
-
-        <script src="https://player.vimeo.com/api/player.js"></script>
-
-        <script src="{url}"></script>
-        <script>
-          var options = {
-            url: "https://vimeo.com/87090371",
-            width: 800
-          };
-
-          var videoPlayer = new Vimeo.Player('myVideo', options);
-
-          videoPlayer.on('play', function() {
-            console.log('Played the video');
-          });
-        </script>
+        <!-- Biteable embed video -->
+        <section id="video">
+          <h2>Biteable Video</h2>
+          <iframe frameborder="0" width="560" height="315" src="https://016e-184-148-66-156.ngrok.io/watch/embed/6/e80f25541f630d71895345f0f9f5270a" allowfullscreen="true" allow="autoplay">
+          </iframe>
+          <p>
+            <a href="https://016e-184-148-66-156.ngrok.io/watch/6/e80f25541f630d71895345f0f9f5270a">CTA video</a> on <a href="https://biteable.com">Biteable</a>.
+          </p>
+        </section>
 
       <!-- Footer -->
         <footer id="footer">
